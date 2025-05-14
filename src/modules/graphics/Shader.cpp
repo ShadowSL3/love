@@ -48,14 +48,14 @@ namespace glsl
 static const char global_syntax[] = R"(
 #define LOVE_HIGHP_OR_MEDIUMP highp
 #define number float
-#define Image sampler2D
+#define image2d sampler2D
 #define ArrayImage sampler2DArray
 #define CubeImage samplerCube
 #define VolumeImage sampler3D
 #define DepthImage sampler2DShadow
 #define DepthArrayImage sampler2DArrayShadow
 #define DepthCubeImage samplerCubeShadow
-#define extern
+#define uniform
 
 #if __VERSION__ >= 430 || (defined(GL_ES) && __VERSION__ >= 310)
 	layout (std430) buffer;
