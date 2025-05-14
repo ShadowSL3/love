@@ -55,7 +55,7 @@ static const char global_syntax[] = R"(
 #define DepthImage sampler2DShadow
 #define DepthArrayImage sampler2DArrayShadow
 #define DepthCubeImage samplerCubeShadow
-#define extern uniform
+#define extern
 
 #if __VERSION__ >= 430 || (defined(GL_ES) && __VERSION__ >= 310)
 	layout (std430) buffer;
